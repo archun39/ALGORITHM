@@ -1,2 +1,2 @@
-# ALGORITHM
+# ALGORITHM 🖥
 [Algorithm]
