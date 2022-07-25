@@ -13,20 +13,16 @@ for i in range(len(A)-1) :
     #0 또는 1이 나오는 경우에 0과 1 앞뒤로 +를 해주어야 한다
     if A[i+1] == '0' or A[i+1] == '1' :
         result = result + int(A[i+1])
-        print('-1-')
         if (i+1) < len(A)-1 :
             result = result + int(A[i+2])
             # 이 과정에서 포문의 인덱스를 한 개 건너뛰어야 하므로 점프를 통해 건너뛰어준다.
             jump = 1
-            print('-2-')
             continue
             
     elif A[i] == '0' or A[i] == '1' : 
         result = result + int(A[i+1])
-        print('-3-')
     
     else : 
         result = result * int(A[i+1])
-        print('-4-')
     
 print(result)
